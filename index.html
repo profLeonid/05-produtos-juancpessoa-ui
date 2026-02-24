@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="./main.js " defer></script>
+    <script src="./main.js" defer></script>
 
     <title>Produtos</title>
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center h-screen gap-">
    
-    <h1 class="text-2xl">Lista de produtos</h1>
+    <h1 class="text-3xl">Lista de produtos</h1>
+    <h2 class="text-1xl m-3"> Digite Codigo, produto e valor</h2>
     
     <input 
     type="text" 
@@ -22,8 +23,12 @@
     onclick="adicionarProduto()">
     Adicionar
     </button>
+
+    
+    </button>
    
-    <div 
+    <div class="columns-auto w-100 h-100 break-after-column
+    break-after: column;"
     id="lista"
     ></div>
 </body>

@@ -7,9 +7,11 @@ function adicionarProduto(){
     const span = document.createElement('span')
     span.textContent = produto.value
 
-    lista.appendChild(span)
     span.className = " flex flex col bg-yellow-100 px8 py-2" 
 
-    produto.value = ''
-    
+    if (produto.value == ""){
+        console.log('erro')
+    }else{
+        lista.appendChild(span)
+    }
 }
