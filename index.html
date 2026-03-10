@@ -16,20 +16,50 @@
     <input 
     type="text" 
     class=" border rounded px-8 py-2"
+    placeholder=" Produto"
     id="produto"
     >
+    <input 
+    type="number" 
+    class=" border rounded px-8 py-2"
+    placeholder=" Códico"
+    id="codigo"
+    >
+    <input 
+    type="text" 
+    class=" border rounded px-8 py-2"
+    placeholder=" Quantidade"
+    id="quantidade"
+    >
+    
     <button 
     class="bg-blue-400 border rounded text-white px-4 m-3 " 
     onclick="adicionarProduto()">
     Adicionar
     </button>
 
-    
-    </button>
    
-    <div class="columns-auto w-100 h-100 break-after-column
-    break-after: column;"
-    id="lista"
-    ></div>
+    <button class="bg-blue-400 border rounded text-white px-4 m-3" 
+    onclick="limparProduto()"> 
+        limpa
+        
+    </button>
+
+    <div id="lista" class="flex flex-col gap-2" >
+        <table id= 'tabela' class=" border-separate border-spacing-y-1">
+
+            <thead> 
+                <tr class= "text-left">
+                    <th class="px-4 py-2">Código</th>
+                    <th class="px-4 py-2">Produto</th>
+                    <th class="px-4 py-2">Quantidade</th>
+                </tr>
+            </thead>
+
+            <tbody id="atributos"></tbody>
+
+        </table>
+    </div>
+
 </body>
 </html>
